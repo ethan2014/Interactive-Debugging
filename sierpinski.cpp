@@ -48,7 +48,7 @@ void doTriangle(int sideLength)
 	//Create the grid for my output, and initialize each entry to be a space
 	// I am making the grid just a bit bigger than we need, in order to handle rounding
 	// errors.
-	char* grid = new char[(sideLength+1) * (sideLength+1) + 1];
+	char* grid = new char[(sideLength + 1) * (sideLength + 1) + 1];
 	/*
 	 * In C++, you may use an array of characters to represent a string. Unfortunately, however,
 	 *  C++ does not know how long the array is, so we must use the special character '\0',
@@ -57,10 +57,10 @@ void doTriangle(int sideLength)
 	 *  Such a string is called a "null-terminated string." Without this '\0', your program will
 	 *  probably crash if you do "cout << grid;"
 	 */
-	grid[sideLength*sideLength] = '\0';
+	grid[sideLength * sideLength] = '\0';
 
 	int i;
-	for(i=0; i < sideLength*sideLength; i++);
+	for(i=0; i < sideLength * sideLength; i++)
 	{
 		grid[i] = ' ';
 	}
@@ -76,11 +76,11 @@ void doTriangle(int sideLength)
 	grid[((int)p2y)*sideLength + (int)p2x] = '8';
 
 	//The third corner is in the middle of the top
-	double p3x = sideLength - 1;
+	double p3x = sideLength / 2.0;
 	double p3y = 0;
 	grid[((int)p3y)*sideLength + (int)p3x] = '8';
 
-    //We pick an arbitrary place for the bug to start ... in this case the lower left corner
+	//We pick an arbitrary place for the bug to start ... in this case the lower left corner
 	double curx = 0;
 	double cury = sideLength - 1;
 
@@ -116,7 +116,7 @@ void doTriangle(int sideLength)
 	{
 		for(int j=0;j<sideLength; j++)
 		{
-			outfile << grid[i*sideLength + i];
+			outfile << grid[i*sideLength + j];
 		}
 		outfile << endl;
 	}
