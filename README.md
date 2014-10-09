@@ -80,9 +80,9 @@ Well, the weird characters are gone. Now there are only spaces and 8s, so that i
 
 Repeat step 4, and try to identify which of the three stages of the program is causing this incorrect output. If grid only contains longs stripes of 8s, then there are probably still problems in the first two stages. If grid contains a mix of 8s and spaces, then the problem is likely in the printing.
 
-* 8.a) What should grid look like at the end of the first stage? What does it actually look like?
-* 8.b) What should grid look like at the end of the second stage? What does it actually look like?
-* 8.c) Which section is the current bug in?
+* 8.a) What should grid look like at the end of the first stage? What does it actually look like?  Nothing but spaces, which is what it looks like.
+* 8.b) What should grid look like at the end of the second stage? What does it actually look like?  Given the output, it should look like large strips of '8's, which is not what it looks like.
+* 8.c) Which section is the current bug in?  Because of this, the error is in the printing part.
  
 Step 9
 ------
