@@ -72,7 +72,7 @@ In the previous step you should have identified the bug: The for loop has a semi
 
 Fix the bug by deleting the stray semi-colon. Then, re-build and re-run the program, to generate a new triangle.html. Look at it, and see how it looks. 
 
-* 7.a) What problems were fixed in the preceding steps? What errors can we see now?
+* 7.a) What problems were fixed in the preceding steps? What errors can we see now?  The 'I' character was changed to a ' ' like its supposed to be.  The new error is that the triangle isnt being printed like it is supposed to be.
  
 Step 8
 ------
