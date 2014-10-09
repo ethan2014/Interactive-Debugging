@@ -11,15 +11,15 @@ Step 1
 ------
 Create a project file, and add sierpinski.cpp to the project. Also, look at correct-triangle.html to see an example of correct output. Skim/read the source code for sierpinski.cpp, and try to answer the following questions:
 
-* 1.a) What is the purpose of this program?
-* 1.b) Does the program produce output? If so, what kind of output is it, and where does it end up?
-* 1.c) Does the program accept input? If so, what kind of input, and how is it provided?
+* 1.a) What is the purpose of this program?  To print out a Sierpinski triangle.
+* 1.b) Does the program produce output? If so, what kind of output is it, and where does it end up?  It outputs an HTML file that is supposed to be the correct triangle.
+* 1.c) Does the program accept input? If so, what kind of input, and how is it provided?  The function that prints the triangle accepts the size of one side of the triangle which is an `int`.
 
 Step 2
 -------
 Build and run Sierpinski. An output file called “triangle.html” should be placed in your project directory, along with your source code. The file should exist, but you will notice that its contents do not look much like the correct output.
 
-* 2.a) List all the ways that you can see that the current output of your program is different from the expected output.
+* 2.a) List all the ways that you can see that the current output of your program is different from the expected output.  It doesnt print a sierpinski triangle.  It doesnt print any kind of triangle.  It has a weird character that isnt supposed to be there.
 
 Step 3
 ------
